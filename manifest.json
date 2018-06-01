@@ -1,0 +1,16 @@
+{
+  "name": "Verbling A/B Tests Manager",
+  "version": "1.1",
+  "description": "Toggle between active A/B tests' variations",
+  "web_accessible_resources": ["/injected_brain.js"],
+  "content_scripts": [
+    {
+      "matches": ["https://*.verbling.com/*"],
+      "js": ["contentscripts.js"]
+    }
+  ],
+  "page_action": {
+    "default_popup": "popup.html"
+  },
+  "manifest_version": 2
+}
