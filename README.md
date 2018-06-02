@@ -1,2 +1,2 @@
-# Verbling-AB-Manager
+# Verbling A/B Tests Manager
 Chrome extension to manage current running A/B tests on production and switch between them on the fly. 
