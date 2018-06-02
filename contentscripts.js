@@ -5,5 +5,13 @@ function injectScript(file, node) {
   s.setAttribute('src', file);
   th.appendChild(s);
 }
-
 injectScript(chrome.extension.getURL('/injected_brain.js'), 'body');
+window.addEventListener('message', receiveMessage, false);
+
+function receiveMessage(event) {
+  var result = /^https?:\/\/([a-zA-Z\d-]+\.){0,}verbling\.com$/.test(
+    event.origin
+  );
+  if (!result) return;
+  chrome.runtime.sendMessage(event.data);
+}

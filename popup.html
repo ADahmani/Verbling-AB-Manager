@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+     <style type="text/css">
+        .title-area {
+            -webkit-app-region: drag;
+        }
+        button {
+          padding: 10px;
+          outline: none;
+          background-color: transparent;
+          border-radius: 8px;
+          border-color: #fff;
+          color: #fff;
+        }
+        button:hover, button:active {
+          background-color: #fff;
+          color: #0699cd;
+          box-shadow: 0 2px 2px 0 rgba(0,0,0,.1);
+          -webkit-transition:-webkit-box-shadow .1s;
+          transition:-webkit-box-shadow .1s;
+          -o-transition:box-shadow .1s;
+          transition:box-shadow .1s;
+          transition:box-shadow .1s,
+          -webkit-box-shadow .1s
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+            border: none;
+            outline: none;
+            overflow: hidden;
+            background-color: transparent;
+            color: white;
+        }
+        .experiments {
+          padding: 15px;
+          padding-top: 0px;
+          border: white 1px dashed;
+        }
+        .experiment {
+          border-top: white 1px dashed;
+          margin-bottom: 15px
+        }
+    </style>
+   </head>
+   <body>
+     <div style="background-image: linear-gradient(125deg, #0699cd, #3bb85c)" id="x">
+
+     </div>
+     <script src="popup.js"></script>
+   </body>
+ </html>
